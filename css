@@ -50,4 +50,17 @@ ul.tabs li.selected a
     border: 1px solid #B7B7B7;
     border-bottom-color: white;
 }
+
+
+div
+.tabcontents
+{ width: 400px;
+    border: 1px solid #B7B7B7; padding: 20px;
+    background-color:#FFF;
+    border-radius: 0 2px 2px 2px;
+}
+
+
+
+
 </style>
