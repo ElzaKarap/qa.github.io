@@ -9,7 +9,36 @@
         <li class=""><a rel="tab_div3" href="#" onclick="javascript:ShowMyDiv(this);">Tab 3</a></li>
         <li class=""><a rel="tab_div4" href="#" onclick="javascript:ShowMyDiv(this);">Tab 4</a></li>
 </ul>
-
+        
+        <!-- Building several container divs   --> 
+        
+        <div class="tabcontents">
+ <div class="tabcontent" id="tab_div1" style="display: block;">
+  <b>Content 1 Title</b>
+  <p>The content could contain anything text page or submit form or any other HTML objects.</p>
+ </div>
+ <div class="tabcontent" id="tab_div2" style="display: none;">
+  <b>Where are the divs</b>
+  <p>All content divs related to the tabs are invisible only the one related to the selected tab is set to be visible.</p>
+ </div>
+ <div class="tabcontent" id="tab_div3" style="display: none;">
+  <b>About tabs</b>
+  <p>by Selecting any tab its classname will set to be "selected" which has a different style from the other tabs<br>
+  that can be done by using a simple javascript code<br>
+  <b><I>TabObj.className="selected";</I></b></p>
+ </div>
+ <div class="tabcontent" id="tab_div4" style="display: none;">            
+  <div style="border:1px solid black;">
+  <p><B>Read more about</B><br>
+  <A HREF="http://function-code.blogspot.com/2012/12/div-inside-another-div.html">how to put div inside another div</A><br>
+  <A HREF="http://function-code.blogspot.com/2012/11/change-div-border-width-style-and-color.html">How to change div border width style and color</A>
+  </p>
+  <div>
+ </div>
+</div>
+        
+        
+        
 </body>
 
 </html>
