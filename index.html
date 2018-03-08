@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html>
+        
+ <script>
+function ShowMyDiv(Obj){
+  var elements = document.getElementsByTagName('div');
+ for (var i = 0; i < elements.length; i++) 
+  if(elements[i].className=='tabcontent')
+   elements[i].style.display= 'none';
+
+ document.getElementById(Obj.rel).style.display= 'block';
+ //------------------------------------
+
+  var ul_el = document.getElementById('tab_ul');
+  var li_el = ul_el.getElementsByTagName('li');
+ for (var i = 0; i < li_el.length; i++) 
+  li_el[i].className="";
+
+ Obj.parentNode.className="selected";
+}
+</script>
+        
 <body>
 
 
