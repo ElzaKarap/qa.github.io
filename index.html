@@ -27,37 +27,12 @@
   <div class="col-xs-9">
     <!-- Tab panes -->
     <div class="tab-content">
-      <div class="tab-pane active" id="home">Home Tab.</div>
-      <div class="tab-pane" id="profile">Profile Tab.</div>
-      <div class="tab-pane" id="messages">Messages Tab.</div>
-      <div class="tab-pane" id="settings">Settings Tab.</div>
-    </div>
-  </div>
-
-  <div class="clearfix"></div>
-
-</div>
-
-
-  
-  
-  
-  <!-- left category menu -->
-  
-  <p>Test Cases</p>
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'SmokeTest')" id="defaultOpen">Smoke Test</button>
-  <button class="tablinks" onclick="openCity(event, 'VideoDiscoveryTests')">Video Discovery Tests</button>
-  <button class="tablinks" onclick="openCity(event, 'CallHomeTests')">Call Home Tests</button>
-</div>
-
-<div id="SmokeTest" class="tabcontent">
-  <h3>Smoke Test</h3>
-  <p>Smoke Test Content here
-  
-  
-  <!-- collapsable menu  -->
+      <div class="tab-pane active" id="home">
+        
+        
+        
+        
+        <!-- collapsable menu  -->
 
 
   <div class = "container">
@@ -175,7 +150,7 @@
 </div>
   
 </div>
-  <!-- end of collapsable menu -->
+ 
   
   <!-- end container -->
 
@@ -186,42 +161,30 @@
  
  
 </div> <!-- end container -->
+    
+     <!-- end of collapsable menu -->
   
-  
-  
-  
-  </p>
+      
+      
+      
+      
+      
+      
+      
+      </div>
+      <div class="tab-pane" id="profile">Profile Tab.</div>
+      <div class="tab-pane" id="messages">Messages Tab.</div>
+      <div class="tab-pane" id="settings">Settings Tab.</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
 </div>
+ 
+  
+  
 
-<div id="VideoDiscoveryTests" class="tabcontent">
-  <h3>Video Disovery Tests</h3>
-  <p>Video Disovery Tests Content here</p> 
-</div>
-
-<div id="CallHomeTests" class="tabcontent">
-  <h3>Call Home Tests</h3>
-  <p>Call Home Content here</p>
-</div>
-
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-     
   
 <!--  end of left category menu  -->  
   
