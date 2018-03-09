@@ -28,19 +28,11 @@
         <!-- collapsable content -->
       <!--  The panel content comes here where you may use text, images and even videos. You may also place HTML tables, list etc here. 
       -->
- <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-  <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-  <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-</ul>
 <!-- Tabulation contents -->
 <div class="tab-content">
   <div id="home" class="tab-pane fade in active">
     <h3>Test Case</h3>
-    <p>
-    
-      
-      
+    <p>     
       <!-- column 1 -->
  <table class="table">  <tr> <td> ID </td>
                               <td> SMK_QNAP_1 </td>   </tr>
@@ -56,12 +48,32 @@
                              </td>          </tr>
    <tr> <td colspan=2>
      
-     <ul class="nav nav-tabs">
-  <li class="active"><a href="#">Home</a></li>
-  <li><a href="#">Menu 1</a></li>
-  <li><a href="#">Menu 2</a></li>
-  <li><a href="#">Menu 3</a></li>
-</ul>
+     <!-- inner tabulation -->
+                                   <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#home">Preconditions</a></li>
+                                <li><a data-toggle="tab" href="#menu1">Test Steps</a></li>
+                                <li><a data-toggle="tab" href="#menu2">Test Data</a></li>
+                                 <li><a data-toggle="tab" href="#menu3">QA notes </a></li>
+                              </ul>
+
+                              <div class="tab-content">
+                                <div id="home" class="tab-pane fade in active">
+                                  <!-- <h3>HOME</h3> -->
+                                  <p> <li> Logged in to QNAPP </li><li> Previous version removed </li></p>
+                                </div>
+                                <div id="menu1" class="tab-pane fade">
+                                  <!-- <h3>Menu 1</h3> -->
+                                  <p>ssh admin@<ip address> (example ip address: 10.126.141.211)<br>
+                                    Password: admin<br>
+                                    Result: "[~] # "<br>
+                                    </p>
+                                </div>
+                                <div id="menu2" class="tab-pane fade">
+                                  <h3>Menu 2</h3>
+                                  <p>Some notes here</p>
+                                </div>
+                              </div>
+     <!-- end of inner tabulation -->
      
 </td>   </tr>    
    
