@@ -1,7 +1,11 @@
 /***********************************************************************
-http://function-code.blogspot.com/2013/03/horizontal-tabs-in-html-with-css.html
-My code is free to use, but not free to republish
+
 ************************************************************************/
+
+body{
+  padding: 60px;
+}
+
 ul.tabs
 {
     padding: 7px 0;
@@ -82,3 +86,11 @@ div.tabcontents
     content: "\e080";
  
 }
+.panel-heading .colpsible-panel:after {
+    
+    font-family: 'Glyphicons Halflings'; 
+    content: "\e114";    
+    float: right;        
+    color: #408080;         
+}
+
