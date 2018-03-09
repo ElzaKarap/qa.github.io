@@ -47,50 +47,17 @@
   <p>Test Cases</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openCity(event, 'SmokeTest')" id="defaultOpen">Smoke Test</button>
+  <button class="tablinks" onclick="openCity(event, 'VideoDiscoveryTests')">Video Discovery Tests</button>
+  <button class="tablinks" onclick="openCity(event, 'CallHomeTests')">Call Home Tests</button>
 </div>
 
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-     
-  
-<!--  end of left category menu  -->  
+<div id="SmokeTest" class="tabcontent">
+  <h3>Smoke Test</h3>
+  <p>Smoke Test Content here
   
   
-<!-- collapsable menu  -->
+  <!-- collapsable menu  -->
 
 
   <div class = "container">
@@ -219,6 +186,47 @@ document.getElementById("defaultOpen").click();
  
  
 </div> <!-- end container -->
+  
+  
+  
+  
+  </p>
+</div>
+
+<div id="VideoDiscoveryTests" class="tabcontent">
+  <h3>Video Disovery Tests</h3>
+  <p>Video Disovery Tests Content here</p> 
+</div>
+
+<div id="CallHomeTests" class="tabcontent">
+  <h3>Call Home Tests</h3>
+  <p>Call Home Content here</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+  
+<!--  end of left category menu  -->  
+  
+  
+
         
 </body>
 
